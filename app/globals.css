@@ -1,0 +1,30 @@
+:root{--ink:#12261f;--paper:#f2f4ee;--lake:#0e6f73;--sun:#e6b422;--line:#c5cfc2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.65 var(--body),Georgia,serif}
+h1,h2,nav,button,label,.row,small,.brand,.stats{font-family:var(--head),system-ui,sans-serif}
+h1{font-size:clamp(2.8rem,10vw,5.6rem);line-height:.95;letter-spacing:-.03em;font-weight:800;margin:.4em 0 .2em}
+h1.h1s{font-size:clamp(2rem,6vw,3rem)}
+h2{font-size:1.4rem;margin:1.8em 0 .4em}
+a{color:var(--lake)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 40px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:720px;margin:0 auto;padding:18px 20px}
+.brand{font-weight:800;text-decoration:none;color:var(--ink)}
+nav a{margin-left:16px}
+.lead{font-size:1.35rem}
+.stats{display:flex;gap:28px;margin:28px 0;border-left:6px solid var(--sun);padding-left:16px}
+.stats b{display:block;font-size:2.4rem;line-height:1}
+.bars{margin:32px 0;padding:0}
+.bars figcaption{font-family:var(--head),sans-serif;font-weight:800;margin-bottom:10px}
+.row{display:grid;grid-template-columns:110px 1fr 56px;gap:10px;align-items:center;margin:6px 0;font-size:.9rem}
+.track{background:var(--line);height:14px}
+.track i{display:block;height:100%;background:var(--lake)}
+small{color:#4d5f58}
+footer a{margin-right:18px}
+label{display:block;margin:14px 0;font-size:.9rem;text-transform:capitalize}
+input,textarea,select{display:block;width:100%;font:inherit;padding:8px;margin-top:4px;border:1px solid var(--ink);background:#fff}
+input[type=checkbox]{width:auto}
+button{font:inherit;font-weight:500;padding:8px 14px;margin:6px 6px 6px 0;border:1px solid var(--ink);background:var(--paper);cursor:pointer}
+button.on,button:hover{background:var(--ink);color:var(--paper)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.item{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:6px 0}
+@media(max-width:480px){.row{grid-template-columns:80px 1fr 48px}}
